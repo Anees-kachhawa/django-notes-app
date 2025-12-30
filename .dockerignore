@@ -1,0 +1,22 @@
+# Ignore database files (this fixes your Jenkins error)
+data/mysql/db/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs & temp files
+*.log
+*.pid
+*.sock
+
+# Git files
+.git
+.gitignore
+
+# Editor settings
+.vscode/
+
+# OS files
+.DS_Store
