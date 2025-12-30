@@ -10,7 +10,7 @@ pipeline{
                 }
             }
         }
-        stage("Code Build"){
+        stage("Code Building"){
             steps{
                 script{
                     docker_build("notes-app","latest","anishhhhhh")
