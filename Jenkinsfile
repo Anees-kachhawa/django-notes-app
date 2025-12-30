@@ -26,6 +26,7 @@ pipeline{
         }
         stage("Deploy"){
             steps{
+                echo "This is the SCM from github"
                 deploy()
             }
         }
