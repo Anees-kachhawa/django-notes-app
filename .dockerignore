@@ -1,22 +1,42 @@
-# Ignore database files (this fixes your Jenkins error)
-data/mysql/db/
-
-# Python cache
+# Python
 __pycache__/
 *.pyc
 *.pyo
-
-# Logs & temp files
+*.pyd
+*.sqlite3
 *.log
-*.pid
-*.sock
 
-# Git files
+# Django
+.env
+.env.*
+staticfiles/
+media/
+
+# Git
 .git
 .gitignore
 
-# Editor settings
-.vscode/
+# Jenkins
+workspace/
 
-# OS files
+# Docker
+Dockerfile
+docker-compose.yml
+
+# MySQL data (CRITICAL FIX)
+data/
+mysql/
+db/
+data/mysql/
+data/mysql/db/
+
+# MySQL runtime files
+*.dblwr
+*.ibd
+*.ib_logfile*
+*.ibdata*
+*.sock
+
+# OS
 .DS_Store
+Thumbs.db
