@@ -26,8 +26,8 @@ pipeline{
         }
         stage("Deploy"){
             steps{
-                echo "This is the SCM from github latest"
-                sh "docker compose up -d"
+                echo "Do something man"
+                sh "docker compose down && docker compose up -d"
             }
         }
     }
