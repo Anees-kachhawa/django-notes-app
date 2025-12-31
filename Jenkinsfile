@@ -8,12 +8,11 @@ pipeline{
                 script{
                 clone("https://github.com/LondheShubham153/django-notes-app.git","main")
                 }
-        stage('Cleanup workspace') {
-            steps {
-            sh 'sudo rm -rf data/mysql || true'
-                }
+            }
         }
-
+        stage("Clean Workspace"){
+            steps{
+                sh 'sudo rm -rf data/mysql || true'
             }
         }
         stage("Code Building"){
