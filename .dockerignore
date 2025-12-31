@@ -1,8 +1,6 @@
 # Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
 *.sqlite3
 *.log
 
@@ -19,16 +17,10 @@ media/
 # Jenkins
 workspace/
 
-# Docker
-Dockerfile
-docker-compose.yml
-
-# MySQL data (CRITICAL FIX)
-data/
-mysql/
-db/
-data/mysql/
+# MySQL data (FIX)
 data/mysql/db/
+data/mysql/db/*
+data/mysql/
 
 # MySQL runtime files
 *.dblwr
