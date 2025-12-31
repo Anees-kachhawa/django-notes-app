@@ -28,6 +28,7 @@ pipeline{
             steps{
                 echo "Do something man"
                 sh "docker compose down && docker compose up -d"
+                echo "Lets's see if poll SCM is working or not"
             }
         }
     }
