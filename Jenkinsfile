@@ -27,7 +27,7 @@ pipeline{
         stage("Deploy"){
             steps{
                 echo "This is the SCM from github latest"
-                deploy()
+                sh "docker compose up -d"
             }
         }
     }
